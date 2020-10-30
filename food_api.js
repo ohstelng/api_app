@@ -19,6 +19,18 @@ router.get('/lasu', (req, res)=>{
     res.send(files.Lasu_area_name);
 });
 
+router.get('/kwasu', (req, res)=>{
+    res.send(files.kwasu_area_name);
+});
+
+router.get('/kwaraploy', (req, res)=>{
+    res.send(files.kwaraPloy_area_name);
+});
+
+router.get('/funaab', (req, res)=>{
+    res.send(files.funaab_area_name);
+});
+
 router.get('/al-hikmah', (req, res)=>{
     res.send(files.Al_Hikmah_area_name);
 });

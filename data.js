@@ -3,7 +3,10 @@ const search_key_hostel = {
     "University of ilorin": {"name": "University of ilorin", "codeId": "unilorin001", "abbr": "Unilorin",},
     "University of Lagos": {"name": "University of Lagos", "codeId": "unilag001", "abbr": "Unilag",},
     "Lagos State University": {"name": "Lagos State University", "codeId": "lasu001", "abbr": "Lasu",},
-    "Al-Hikmah University": {"name": "Al-Hikmah University", "codeId": "Al-Hikmah001", "abbr": "Al-Hikmah",}
+    "Al-Hikmah University": {"name": "Al-Hikmah University", "codeId": "Al-Hikmah001", "abbr": "Al-Hikmah",},
+    "Kwara State University": {"name": "Kwara State University", "codeId": "Kwasu001", "abbr": "Kwasu",},
+    "Kwara State Ployltechnic": {"name": "Kwara State Ployltechnic", "codeId": "KwaraPoly001", "abbr": "KwaraPoly",},
+    "Federal University Of Agriculture, Abeokuta": {"name": "Federal University Of Agriculture, Abeokuta", "codeId": "Funaab001", "abbr": "funaab",},
 };
 
 
@@ -48,6 +51,30 @@ const all_location = {
         {"uni": "Al-Hikmah", "keyword": "cottage", "id": 35, "autocompleteTerm": "Cottage"},
         {"uni": "Al-Hikmah", "keyword": "Gerin Alimi", "id": 36, "autocompleteTerm": "Gerin Alimi"},
         {"uni": "Al-Hikmah", "keyword": "olorunsogo", "id": 37, "autocompleteTerm": "Olorunsogo"},
+        //
+        {"uni": "Kwasu", "keyword": "safari", "id": 38, "autocompleteTerm": "Safari"},
+        {"uni": "Kwasu", "keyword": "school gate", "id": 39, "autocompleteTerm": "School Gate"},
+        {"uni": "Kwasu", "keyword": "police station", "id": 40, "autocompleteTerm": "Police Station"},
+        {"uni": "Kwasu", "keyword": "west end", "id": 41, "autocompleteTerm": "West End"},
+        {"uni": "Kwasu", "keyword": "millionaire hostel", "id": 42, "autocompleteTerm": "Millionaire Hostel"},
+        {"uni": "Kwasu", "keyword": "agt 2", "id": 43, "autocompleteTerm": "AGT 2"},
+        {"uni": "Kwasu", "keyword": "amina castle", "id": 44, "autocompleteTerm": "Amina Castle"},
+        {"uni": "Kwasu", "keyword": "cap lounge", "id": 45, "autocompleteTerm": "Cap Lounge"},
+        {"uni": "Kwasu", "keyword": "boye hostel", "id": 46, "autocompleteTerm": "Boye Hostel"},
+        {"uni": "Kwasu", "keyword": "e place", "id": 47, "autocompleteTerm": "E Place"},
+        //
+        {"uni": "kwaraPoly", "keyword": "kulende", "id": 48, "autocompleteTerm": "Kulende"},
+        {"uni": "kwaraPoly", "keyword": "sanjo", "id": 49, "autocompleteTerm": "Sanjo"},
+        {"uni": "kwaraPoly", "keyword": "oyun", "id": 50, "autocompleteTerm": "Oyun"},
+        {"uni": "kwaraPoly", "keyword": "eleko", "id": 51, "autocompleteTerm": "Eleko"},
+        {"uni": "kwaraPoly", "keyword": "oke oyi", "id": 52, "autocompleteTerm": "Oke Oyi"},
+        {"uni": "kwaraPoly", "keyword": "oke ose", "id": 53, "autocompleteTerm": "Oke Ose"},
+        {"uni": "kwaraPoly", "keyword": "ploy gate", "id": 54, "autocompleteTerm": "Ploy Gate"},
+        {"uni": "kwaraPoly", "keyword": "yakuba", "id": 55, "autocompleteTerm": "Yakuba"},
+        {"uni": "kwaraPoly", "keyword": "general", "id": 56, "autocompleteTerm": "general"},
+        {"uni": "kwaraPoly", "keyword": "agbo oba", "id": 57, "autocompleteTerm": "Agbo Oba"},
+
+
     ],
 }
                                         ///////// hostel ends here ///////////////
@@ -77,35 +104,47 @@ const unilag_area_name = {
     ],
   };
   
-  const Al_Hikmah_area_name = {
-    areaNames: [
-      "Adeta",
-      "Adewale Estate",
-      "Olorunsogo",
-      "Mandate",
-      "Cottage",
-      "Gerin Alimi",
-      'onCampus'
-    ],
-  };
-  
-  const Lasu_area_name = {
-    areaNames: [
-      "Festac Town",
-      "Ijegun", 
-      'onCampus',
-      "Lasu - Isheri Road",
-      "Obadore",
-      "Akesan",
-      "Iyana Iba",
-      "Okokomaiko",
-      "Iyana Ishashi",
-      "Iyana Era",
-      "Ikotun",
-    ],
-  };
+const Al_Hikmah_area_name = {
+areaNames: [
+    "Adeta",
+    "Adewale Estate",
+    "Olorunsogo",
+    "Mandate",
+    "Cottage",
+    "Gerin Alimi",
+    'onCampus'
+],
+};
 
-  const food_delivery_price_info = {
+const Lasu_area_name = {
+areaNames: [
+    "Festac Town",
+    "Ijegun", 
+    'onCampus',
+    "Lasu - Isheri Road",
+    "Obadore",
+    "Akesan",
+    "Iyana Iba",
+    "Okokomaiko",
+    "Iyana Ishashi",
+    "Iyana Era",
+    "Ikotun",
+],
+};
+
+const kwasu_area_name = {
+areaNames: [],
+};
+
+const kwaraPloy_area_name = {
+areaNames: [],
+};
+
+const funaab_area_name = {
+areaNames: [],
+};
+
+const food_delivery_price_info = {
     'unilorin': {
         'onCampus' : {
             1: 50,
@@ -242,6 +281,120 @@ const unilag_area_name = {
             6:150,
             7:200,
             8:200,
+            9:250,
+            10:250,
+        },
+        'differentLocation' : {
+            1: 100,
+            2: 100,
+            3: 150,
+            4:150,
+            5:200,
+            6:200,
+            7:250,
+            8:250,
+            9:300,
+            10:300,
+        }
+    },
+    'kwasu': {
+        'onCampus' : {
+            1: 50,
+            2: 50,
+            3: 50,
+            4: 100,
+            5: 100,
+            6: 100,
+            7: 150,
+            8: 150,
+            9: 150,
+            10: 150,
+        },
+        'sameLocation' : {
+            1: 50,
+            2: 50,
+            3: 100,
+            4:100,
+            5:150,
+            6:150,
+            7:200,
+            8:200,
+            9:1250,
+            10:250,
+        },
+        'differentLocation' : {
+            1: 100,
+            2: 100,
+            3: 150,
+            4:150,
+            5:200,
+            6:200,
+            7:250,
+            8:250,
+            9:300,
+            10:300,
+        }
+    },
+    'kwarapoly': {
+        'onCampus' : {
+            1: 50,
+            2: 50,
+            3: 50,
+            4: 100,
+            5: 100,
+            6: 100,
+            7: 150,
+            8: 150,
+            9: 150,
+            10: 150,
+        },
+        'sameLocation' : {
+            1: 50,
+            2: 50,
+            3: 100,
+            4:100,
+            5:150,
+            6:150,
+            7:200,
+            8:200,
+            9:1250,
+            10:250,
+        },
+        'differentLocation' : {
+            1: 100,
+            2: 100,
+            3: 150,
+            4:150,
+            5:200,
+            6:200,
+            7:250,
+            8:250,
+            9:300,
+            10:300,
+        }
+    },
+    'funaab': {
+        'onCampus' : {
+            1: 50,
+            2: 50,
+            3: 50,
+            4: 100,
+            5: 100,
+            6: 100,
+            7: 150,
+            8: 150,
+            9: 150,
+            10: 150,
+        },
+        'sameLocation' : {
+            1: 50,
+            2: 50,
+            3: 100,
+            4:100,
+            5:150,
+            6:150,
+            7:200,
+            8:200,
             9:1250,
             10:250,
         },
@@ -269,33 +422,49 @@ const unilag_area_name = {
 const market_delivery_info = {
     'University Of Ilorin': {
     'unilorin': {'delivery_time': '20 - 30 Mins', 'price': 50},
-    'unilag': {'delivery_time': '1 - 2 Days', 'price': 350},
+    'unilag': {'delivery_time': '1 - 2 Days', 'price': 500},
     'lasu': {'delivery_time': '2 - 3 Days', 'price': 500},
-    'al-hikmah': {'delivery_time': '20 - 40 Mins', 'price': 1000},
+    'al-hikmah': {'delivery_time': '20 - 40 Mins', 'price': 150},
+
+    'kwasu': {'delivery_time': '1 - 2 Days', 'price': 50},
+    'kwarapoly': {'delivery_time': '1 - 2 Days', 'price': 50},
+    'funaab': {'delivery_time': '1 - 2 Days', 'price': 250},
     },
     'University Of Lagos': {
     'unilag': {'delivery_time': '20 - 30 Mins', 'price': 150},
-    'unilorin': {'delivery_time': '1 - 2 Days', 'price': 350},
+    'unilorin': {'delivery_time': '1 - 2 Days', 'price': 500},
     'lasu': {'delivery_time': '20 - 40 Mins', 'price': 250},
-    'al-hikmah': {'delivery_time': '1 - 2', 'price': 350},
+    'al-hikmah': {'delivery_time': '1 - 2', 'price': 500},
+    'kwasu': {'delivery_time': '1 - 2 Days', 'price': 500},
+
+    'kwasu': {'delivery_time': '1 - 2 Days', 'price': 500},
+    'kwarapoly': {'delivery_time': '1 - 2 Days', 'price': 500},
+    'funaab': {'delivery_time': '1 - 2 Days', 'price': 500},
     },
     'Lagos State University': {
     'unilag': {'delivery_time': '20 - 40 Mins', 'price': 250},
     'unilorin': {'delivery_time': '2 - 3 Days', 'price': 500},
     'lasu': {'delivery_time': '20 - 30 Mins', 'price': 150},
     'al-hikmah': {'delivery_time': '2 - 3', 'price': 500},
+
+    'kwasu': {'delivery_time': '1 - 2 Days', 'price': 500},
+    'kwarapoly': {'delivery_time': '1 - 2 Days', 'price': 500},
+    'funaab': {'delivery_time': '1 - 2 Days', 'price': 500},
     },
     'AL-Hikmah University': {
-    'unilag': {'delivery_time': '1 - 2 Days', 'price': 350},
-    'unilorin': {'delivery_time': '20 - 40 mins', 'price': 1000},
+    'unilag': {'delivery_time': '1 - 2 Days', 'price': 500},
+    'unilorin': {'delivery_time': '20 - 40 mins', 'price': 150},
     'lasu': {'delivery_time': '2 - 3 Days', 'price': 500},
     'al-hikmah': {'delivery_time': '20 - 30 Mins', 'price': 50},
+
+    'kwasu': {'delivery_time': '1 - 2 Days', 'price': 50},
+    'kwarapoly': {'delivery_time': '1 - 2 Days', 'price': 50},
+    'funaab': {'delivery_time': '1 - 2 Days', 'price': 250},
     },
+    
 
 };
                             
-
-
 
                        ///////////////// market ends here //////////////////////////
 
@@ -306,151 +475,13 @@ const hire_laundry_deilvery_fee = {
     'unilag': 10,
     'lasu': 10,
     'al-hikmah': 5,
+    'kwasu': 5,
+    'kwarapoly': 5,
+    'funaab': 5,
 };
 
 
-
-
-
-
-
-
                        ////////// hire ends here //////
-
-
-
-
-
-// const unilorin_sub_Location = {
-//     "subLocation": [
-//         {"uni": "Unilorin", "keyword": "campus", "id": 1, "autocompleteTerm": "Campus"},
-//         {"uni": "Unilorin", "keyword": "Unilorin", "id": 2, "autocompleteTerm": "Unilorin Gate"},
-//         {"uni": "Unilorin", "keyword": "stella", "id": 3, "autocompleteTerm": "Stella Maris"},
-//         {"uni": "Unilorin", "keyword": "oke", "id": 4, "autocompleteTerm": "Oke Odo"},
-//         {"uni": "Unilorin", "keyword": "oke", "id": 5, "autocompleteTerm": "Oke Oba"},
-//         {"uni": "Unilorin", "keyword": "sanrab", "id": 6, "autocompleteTerm": "Sanrab"},
-//         {"uni": "Unilorin", "keyword": "mark", "id": 7, "autocompleteTerm": "Mark"},
-//         {"uni": "Unilorin", "keyword": "tanke", "id": 8, "autocompleteTerm": "Tanke Ajanaku"},
-//         {"uni": "Unilorin", "keyword": "tipper", "id": 9, "autocompleteTerm": "Tipper Garage"},
-//     ],
-// };
-
-
-// const unilag_sub_Location = {
-//     "subLocation": [
-//         {"uni": "Unilag", "keyword": "akoka", "id": 10, "autocompleteTerm": "Akoka"},
-//         {"uni": "Unilag", "keyword": "yaba", "id": 11, "autocompleteTerm": "Yaba"},
-//         {"uni": "Unilag", "keyword": "onike", "id": 12, "autocompleteTerm": "Onike"},
-//     ],
-// };
-
-// const lasu_sub_Location = {
-//     "subLocation": [
-//         {"uni": "Lasu", "keyword": "ojo", "id": 13, "autocompleteTerm": "Ojo"},
-//         {"uni": "Lasu", "keyword": "ikotu", "id": 14, "autocompleteTerm": "Ikotu"},
-//         {"uni": "Lasu", "keyword": "festac", "id": 15, "autocompleteTerm": "Festac"},
-//     ],
-// };
-
-// const funaab_sub_Location = {
-//     "subLocation": [
-//         {"uni": "Funaab", "keyword": "oluwo", "id": 16, "autocompleteTerm": "Oluwo Estate"},
-//         {"uni": "Funaab", "keyword": "isolu", "id": 17, "autocompleteTerm": "Isolu"},
-//         {"uni": "Funaab", "keyword": "gate", "id": 18, "autocompleteTerm": "Gate"},
-//         {"uni": "Funaab", "keyword": "camp", "id": 19, "autocompleteTerm": "Camp"},
-//         {"uni": "Funaab", "keyword": "cele", "id": 20, "autocompleteTerm": "Cele"},
-//     ],
-// };
-
-// const kwara_poly_sub_Location = {
-//     "subLocation": [
-//         {"uni": "KwaraPloy", "keyword": "gate", "id": 21, "autocompleteTerm": "Ploy Gate"},
-//         {"uni": "KwaraPloy", "keyword": "sango", "id": 22, "autocompleteTerm": "Sango"},
-//         {"uni": "KwaraPloy", "keyword": "kulendu", "id": 23, "autocompleteTerm": "Kulendu"},
-//         {"uni": "KwaraPloy", "keyword": "oyun", "id": 24, "autocompleteTerm": "Oyun"},
-//         {"uni": "KwaraPloy", "keyword": "oke", "id": 25, "autocompleteTerm": "Oke Osi"},
-//     ],
-// };
-
-// const all_location = {
-//     "subLocation": [
-//         {"uni": "Unilorin", "keyword": "campus", "id": 1, "autocompleteTerm": "Campus"},
-//         {"uni": "Unilorin", "keyword": "Unilorin", "id": 2, "autocompleteTerm": "Unilorin Gate"},
-//         {"uni": "Unilorin", "keyword": "stella", "id": 3, "autocompleteTerm": "Stella Maris"},
-//         {"uni": "Unilorin", "keyword": "oke", "id": 4, "autocompleteTerm": "Oke Odo"},
-//         {"uni": "Unilorin", "keyword": "oke", "id": 5, "autocompleteTerm": "Oke Oba"},
-//         {"uni": "Unilorin", "keyword": "sanrab", "id": 6, "autocompleteTerm": "Sanrab"},
-//         {"uni": "Unilorin", "keyword": "mark", "id": 7, "autocompleteTerm": "Mark"},
-//         {"uni": "Unilorin", "keyword": "tanke", "id": 8, "autocompleteTerm": "Tanke Ajanaku"},
-//         {"uni": "Unilorin", "keyword": "tipper", "id": 9, "autocompleteTerm": "Tipper Garage"},
-//         {"uni": "Unilag", "keyword": "akoka", "id": 10, "autocompleteTerm": "Akoka"},
-//         {"uni": "Unilag", "keyword": "yaba", "id": 11, "autocompleteTerm": "Yaba"},
-//         {"uni": "Unilag", "keyword": "onike", "id": 12, "autocompleteTerm": "Onike"},
-//         {"uni": "Lasu", "keyword": "ojo", "id": 13, "autocompleteTerm": "Ojo"},
-//         {"uni": "Lasu", "keyword": "ikotu", "id": 14, "autocompleteTerm": "Ikotu"},
-//         {"uni": "Lasu", "keyword": "festac", "id": 15, "autocompleteTerm": "Festac"},
-//         {"uni": "Funaab", "keyword": "oluwo", "id": 16, "autocompleteTerm": "Oluwo Estate"},
-//         {"uni": "Funaab", "keyword": "isolu", "id": 17, "autocompleteTerm": "Isolu"},
-//         {"uni": "Funaab", "keyword": "gate", "id": 18, "autocompleteTerm": "Gate"},
-//         {"uni": "Funaab", "keyword": "camp", "id": 19, "autocompleteTerm": "Camp"},
-//         {"uni": "Funaab", "keyword": "cele", "id": 20, "autocompleteTerm": "Cele"},
-//         {"uni": "KwaraPloy", "keyword": "gate", "id": 21, "autocompleteTerm": "Ploy Gate"},
-//         {"uni": "KwaraPloy", "keyword": "sango", "id": 22, "autocompleteTerm": "Sango"},
-//         {"uni": "KwaraPloy", "keyword": "kulendu", "id": 23, "autocompleteTerm": "Kulendu"},
-//         {"uni": "KwaraPloy", "keyword": "oyun", "id": 24, "autocompleteTerm": "Oyun"},
-//         {"uni": "KwaraPloy", "keyword": "oke", "id": 25, "autocompleteTerm": "Oke Osi"},
-//     ],
-// };
-
-// const unilorin_food_location_list = [
-//     'Unilorin PS', 'School Gas', 'Stella Maris', 'Oke Odo', 'Oko Oba', 'Tanke Ajanaku', 'Big Boy', 'Sanrab',
-//          'Mark', 'NNPC', 'Tipper Garage ', 'Pipeline', 'F Division ', 'Tanke Junction ', 'Fate', 'Basin'
-// ];
-
-
-  
-
-
-// const food_delivery_price_info = {
-//     'unilorin': {
-//         'onCampus' : {
-//             1: 50,
-//             2: 50,
-//             3: 50,
-//             4: 100,
-//             5: 100,
-//             6: 100,
-//             7: 150,
-//             8: 150,
-//             9: 150,
-//             10: 150,
-//         },
-//         'sameLocation' : {
-//             1: 50,
-//             2: 50,
-//             3: 100,
-//             4:100,
-//             5:150,
-//             6:150,
-//             7:200,
-//             8:200,
-//             9:1250,
-//             10:250,
-//         },
-//         'differentLocation' : {
-//             1: 100,
-//             2: 100,
-//             3: 150,
-//             4:150,
-//             5:200,
-//             6:200,
-//             7:250,
-//             8:250,
-//             9:300,
-//             10:300,
-//         }
-//     },
-// };
 
 const coin_fee = {
     'coinFee': 100,
@@ -458,22 +489,17 @@ const coin_fee = {
 
 
 
-// exports.unilorin_sub_Location = unilorin_sub_Location;
+  
 
 exports.search_key_hostel = search_key_hostel;
-
 exports.unilorin_area_name = unilorin_area_name;
 exports.unilag_area_name = unilag_area_name;
 exports.Al_Hikmah_area_name = Al_Hikmah_area_name;
 exports.Lasu_area_name = Lasu_area_name;
-
-
-// exports.unilag_sub_Location = unilag_sub_Location;
-// exports.lasu_sub_Location = lasu_sub_Location;
-// exports.funaab_sub_Location = funaab_sub_Location;
-// exports.kwara_poly_sub_Location = kwara_poly_sub_Location;
+exports.kwasu_area_name = kwasu_area_name;
+exports.kwaraPloy_area_name = kwaraPloy_area_name;
+exports.funaab_area_name = funaab_area_name;
 exports.all_location = all_location;
-// exports.unilorin_food_location_list = unilorin_food_location_list;
 exports.market_delivery_info = market_delivery_info;
 exports.hire_laundry_deilvery_fee = hire_laundry_deilvery_fee;
 exports.food_delivery_price_info = food_delivery_price_info;
