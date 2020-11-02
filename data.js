@@ -6,7 +6,7 @@ const search_key_hostel = {
     "Al-Hikmah University": {"name": "Al-Hikmah University", "codeId": "Al-Hikmah001", "abbr": "Al-Hikmah",},
     "Kwara State University": {"name": "Kwara State University", "codeId": "Kwasu001", "abbr": "Kwasu",},
     "Kwara State Ployltechnic": {"name": "Kwara State Ployltechnic", "codeId": "KwaraPoly001", "abbr": "KwaraPoly",},
-    "Federal University Of Agriculture, Abeokuta": {"name": "Federal University Of Agriculture, Abeokuta", "codeId": "Funaab001", "abbr": "funaab",},
+    // "Federal University Of Agriculture, Abeokuta": {"name": "Federal University Of Agriculture, Abeokuta", "codeId": "Funaab001", "abbr": "funaab",},
 };
 
 
@@ -69,7 +69,7 @@ const all_location = {
         {"uni": "kwaraPoly", "keyword": "eleko", "id": 51, "autocompleteTerm": "Eleko"},
         {"uni": "kwaraPoly", "keyword": "oke oyi", "id": 52, "autocompleteTerm": "Oke Oyi"},
         {"uni": "kwaraPoly", "keyword": "oke ose", "id": 53, "autocompleteTerm": "Oke Ose"},
-        {"uni": "kwaraPoly", "keyword": "ploy gate", "id": 54, "autocompleteTerm": "Ploy Gate"},
+        {"uni": "kwaraPoly", "keyword": "poly gate", "id": 54, "autocompleteTerm": "Ploy Gate"},
         {"uni": "kwaraPoly", "keyword": "yakuba", "id": 55, "autocompleteTerm": "Yakuba"},
         {"uni": "kwaraPoly", "keyword": "general", "id": 56, "autocompleteTerm": "general"},
         {"uni": "kwaraPoly", "keyword": "agbo oba", "id": 57, "autocompleteTerm": "Agbo Oba"},
@@ -102,7 +102,7 @@ const unilag_area_name = {
       "Onike, Yaba",
       "Ilaje Bariga",
     ],
-  };
+};
   
 const Al_Hikmah_area_name = {
 areaNames: [
@@ -133,11 +133,22 @@ areaNames: [
 };
 
 const kwasu_area_name = {
-areaNames: [],
+areaNames: ['safari', 'school gate', 'police station', 'west end', 'millionaire hostel', 'Agt2', 'amina castle', 'cap lounge', 'boye hostel', 'e place'],
 };
 
 const kwaraPloy_area_name = {
-areaNames: [],
+areaNames: [
+    'kulende',
+    'sanjo',
+    'oyun',
+    'eleko',
+    'oke oyi',
+    'oke ose',
+    'poly gate',
+    'yakuba',
+    'general',
+    'agbo oba',
+],
 };
 
 const funaab_area_name = {
