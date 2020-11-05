@@ -3,7 +3,7 @@ const search_key_hostel = {
     "University of ilorin": {"name": "University of ilorin", "codeId": "unilorin001", "abbr": "unilorin",},
     "University of Lagos": {"name": "University of Lagos", "codeId": "unilag001", "abbr": "unilag",},
     "Lagos State University": {"name": "Lagos State University", "codeId": "lasu001", "abbr": "lasu",},
-    "Al-Hikmah University": {"name": "Al-Hikmah University", "codeId": "Al-Hikmah001", "abbr": "al-hikmah",},
+    "Al-Hikmah University": {"name": "Al-Hikmah University", "codeId": "Al-Hikmah001", "abbr": "al-hikmat",},
     "Kwara State University": {"name": "Kwara State University", "codeId": "Kwasu001", "abbr": "kwasu",},
     "Kwara State Ployltechnic": {"name": "Kwara State Ployltechnic", "codeId": "KwaraPoly001", "abbr": "kwarapoly",},
     // "Federal University Of Agriculture, Abeokuta": {"name": "Federal University Of Agriculture, Abeokuta", "codeId": "Funaab001", "abbr": "funaab",},
