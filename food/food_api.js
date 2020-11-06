@@ -13,9 +13,9 @@ router.get('/all_food_location', (req, res)=>{
     res.send(foodData.all_food_location);
 });
 
-router.get('/ilorin_location', (req, res) =>{
+router.get('/kwara', (req, res) =>{
     console.log(req.query.main_area);
-    res.send(foodData.ilorin_location);
+    res.send(foodData.kwara_location);
 });
 
 router.get('/main_areas', (req, res) =>{
