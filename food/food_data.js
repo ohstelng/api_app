@@ -14,6 +14,6 @@ const main_area_names = [
 ];
 
 
-exports.ilorin_location = kwara_location;
+exports.kwara_location = kwara_location;
 exports.main_area_names = main_area_names; 
 exports.all_food_location = all_food_location;
