@@ -18,6 +18,8 @@ router.get('/places', (req, res)=>{
 function getLocation(locationName) {
     if(locationName === 'kwara'){
         return locationData.kwara_location;
+    }else if (locationName === 'lagos'){
+        return locationData.lagos_loctaion;
     }else{
         return ['No Location Found!'];
     }

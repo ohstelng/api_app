@@ -6,5 +6,27 @@ const kwara_location = [
     'Oko Erin', 'Surulere', 'Al-hikmat', 'Asa Dam', 'Kwasu', 'Agric', 'Zango', 'Kulende', 'Oke Oyi', 'Oyun'
 ];
 
+const lagos_loctaion = [
+    "Festac Town",
+    "Ijegun", 
+    'onCampus',
+    "Lasu - Isheri Road",
+    "Obadore",
+    "Akesan",
+    "Iyana Iba",
+    "Okokomaiko",
+    "Iyana Ishashi",
+    "Iyana Era",
+    "Ikotun",
+    "University Road",
+    'onCampus',
+    "Akoka, Yaba",
+    "Abule Oja, Yaba",
+    "Onike, Yaba",
+    "Ilaje Bariga",
+];
+
+
 
 exports.kwara_location = kwara_location;
+exports.lagos_loctaion = lagos_loctaion;
