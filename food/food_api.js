@@ -13,16 +13,16 @@ router.get('/all_food_location', (req, res)=>{
     res.send(foodData.all_food_location);
 });
 
-router.get('/kwara', (req, res) =>{
-    console.log(req.query.main_area);
-    res.send(foodData.kwara_location);
-});
-
 router.get('/main_areas', (req, res) =>{
-    res.send(foodData.main_area_names);
+
+    var state = req.query.state;
+    console.log(state);
+    const data = getMainArea(state);
+    res.send(data);
 });
 
 router.get('/price', (req, res)=>{
+    // 'http://localhost:8080/food_api/price/?area=tanke&location=kwara'
     var areaName = req.query.area;
     var location = req.query.location;
     const data = getLocation(location, areaName);
@@ -64,6 +64,14 @@ router.get('/food_delivery_info', (req, res)=>{
     res.send(datafiles.food_delivery_price_info);
 });
 
+function getMainArea(stateName) {
+    if(stateName === 'kwara'){
+        return foodData.kwara_main_area_names;
+    }else{
+        return ['NONE FOUND!!'];
+    }
+}
+
 function getLocation(location, area_name) {
     if(location === 'kwara'){
         return getIlorinAreaPrice(area_name);
@@ -77,6 +85,11 @@ function getIlorinAreaPrice(area_name) {
         return ilorinFoodData.taiwo;
     }else if(area_name === 'tanke'){
         return ilorinFoodData.tanke;
+    }else if (area_name === 'all'){
+        return {
+            'taiwo': ilorinFoodData.taiwo,
+            'tanke': ilorinFoodData.tanke,
+        };
     }else{
         return {};
     }
