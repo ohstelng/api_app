@@ -23,11 +23,17 @@ router.get('/main_areas', (req, res) =>{
 
 router.get('/price', (req, res)=>{
     // 'http://localhost:8080/food_api/price/?area=tanke&location=kwara'
+    // 'http://localhost:8080/food_api/price/?area=all&location=kwara'
     var areaName = req.query.area;
     var location = req.query.location;
     const data = getLocation(location, areaName);
 
     res.send(data);
+});
+
+
+router.get('/price_multiplier', (req, res)=>{
+    res.send(foodData.price_multiplier);
 });
 
 ///
