@@ -4,12 +4,14 @@ const hostelRoute = require('./hostel_api');
 const foodRouter = require('./food/food_api');
 const marketRouter = require('./market_api');
 const hireRouter = require('./hire_api');
+const locationRouter = require('./location/location_api');
 const files = require('./data')
 
 app.use('/hostel_api', hostelRoute);
 app.use('/food_api', foodRouter);
 app.use('/market_api', marketRouter);
 app.use('/hire_api', hireRouter);
+app.use('/location_api', locationRouter);
 
 
 
