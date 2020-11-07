@@ -1,11 +1,11 @@
-                                       ///////// hostel ///////////////
+                            ///////// hostel ///////////////
 const search_key_hostel = {
-    "University of ilorin": {"name": "University of ilorin", "codeId": "unilorin001", "abbr": "unilorin",},
-    "University of Lagos": {"name": "University of Lagos", "codeId": "unilag001", "abbr": "unilag",},
-    "Lagos State University": {"name": "Lagos State University", "codeId": "lasu001", "abbr": "lasu",},
-    "Al-Hikmah University": {"name": "Al-Hikmah University", "codeId": "Al-Hikmah001", "abbr": "al-hikmat",},
-    "Kwara State University": {"name": "Kwara State University", "codeId": "Kwasu001", "abbr": "kwasu",},
-    "Kwara State Ployltechnic": {"name": "Kwara State Ployltechnic", "codeId": "KwaraPoly001", "abbr": "kwarapoly",},
+    "University of ilorin": {"name": "University of ilorin", "codeId": "unilorin001", "abbr": "unilorin", "state": "kwara"},
+    "University of Lagos": {"name": "University of Lagos", "codeId": "unilag001", "abbr": "unilag","state": "lagos"},
+    "Lagos State University": {"name": "Lagos State University", "codeId": "lasu001", "abbr": "lasu", "state": "lagos"},
+    "Al-Hikmah University": {"name": "Al-Hikmah University", "codeId": "Al-Hikmah001", "abbr": "al-hikmat", "state": "kwara"},
+    "Kwara State University": {"name": "Kwara State University", "codeId": "Kwasu001", "abbr": "kwasu", "state": "kwara"},
+    "Kwara State Ployltechnic": {"name": "Kwara State Ployltechnic", "codeId": "KwaraPoly001", "abbr": "kwarapoly", "state": "kwara"},
     // "Federal University Of Agriculture, Abeokuta": {"name": "Federal University Of Agriculture, Abeokuta", "codeId": "Funaab001", "abbr": "funaab",},
 };
 
@@ -507,7 +507,7 @@ exports.kwasu_area_name = kwasu_area_name;
 exports.kwaraPloy_area_name = kwaraPloy_area_name;
 exports.funaab_area_name = funaab_area_name;
 exports.all_location = all_location;
+
 exports.market_delivery_info = market_delivery_info;
 exports.hire_laundry_deilvery_fee = hire_laundry_deilvery_fee;
-exports.food_delivery_price_info = food_delivery_price_info;
 exports.coin_fee = coin_fee;

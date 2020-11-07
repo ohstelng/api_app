@@ -25,7 +25,7 @@ router.get('/main_areas', (req, res) =>{
 router.get('/price', (req, res)=>{
     var areaName = req.query.area;
     var location = req.query.location;
-    const data = getLoaction(location, areaName);
+    const data = getLocation(location, areaName);
 
     res.send(data);
 });
@@ -64,9 +64,11 @@ router.get('/food_delivery_info', (req, res)=>{
     res.send(datafiles.food_delivery_price_info);
 });
 
-function getLoaction(location, area_name) {
-    if(location === 'ilorin'){
+function getLocation(location, area_name) {
+    if(location === 'kwara'){
         return getIlorinAreaPrice(area_name);
+    }else{
+        return {};
     }
 }
 
