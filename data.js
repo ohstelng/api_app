@@ -511,3 +511,4 @@ exports.all_location = all_location;
 exports.market_delivery_info = market_delivery_info;
 exports.hire_laundry_deilvery_fee = hire_laundry_deilvery_fee;
 exports.coin_fee = coin_fee;
+exports.food_delivery_price_info = food_delivery_price_info;
