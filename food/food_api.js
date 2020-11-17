@@ -66,9 +66,9 @@ router.get('/al-hikmah', (req, res)=>{
     res.send(datafiles.Al_Hikmah_area_name);
 });
 
-router.get('/food_delivery_info', (req, res)=>{
-    res.send(datafiles.food_delivery_price_info);
-});
+// router.get('/food_delivery_info', (req, res)=>{
+//     res.send(datafiles.food_delivery_price_info);
+// });
 
 function getMainArea(stateName) {
     if(stateName === 'kwara'){
